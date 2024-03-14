@@ -33,7 +33,7 @@ find_package(ugv_sdk REQUIRED)
 include_directories(
   include
 )
-
+include_directories(/opt/ros/humble/include/tf2_geometry_msgs)
 set(DEPENDENCIES
   "geometry_msgs"
   "nav_msgs"
@@ -43,6 +43,7 @@ set(DEPENDENCIES
   "tf2_ros"
   "scout_msgs"
   "sensor_msgs"
+  "tf2_geometry_msgs"
 )
 
 ## Main body
